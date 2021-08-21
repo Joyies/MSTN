@@ -1,4 +1,4 @@
 # MSTN
-Efficient and Accurate Multi-scale Topological Network for Single Image Dehazing (TMM2021)
+Efficient and Accurate Multi-scale Topological Network for Single Image Dehazing
 
 Coming Soon
