@@ -5,6 +5,7 @@ Efficient and Accurate Multi-scale Topological Network for Single Image Dehazing
 
 * python3
 * PyTorch
+* torchvision
 * NVIDIA GPU+CUDA
 * numpy
 * matplotlib
@@ -23,7 +24,8 @@ Rainy datasets
 * [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) [[Density-aware Single Image De-raining using a Multi-stream Dense Network
 ](https://arxiv.org/abs/1802.07412)]
 #### Train
-
+1. Modify data path in data_utils.py
+2. Train model
  ```shell
  python main.py --net='mstn' --crop --crop_size=240 --bs=16 --lr=0.0001 --trainset='its_train' --testset='its_test' --steps=50000000 --eval_step=5000
  ```
