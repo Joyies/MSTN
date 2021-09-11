@@ -23,14 +23,14 @@ Subpixel-Accurate Ground Truth](https://elib.dlr.de/90624/1/ScharsteinEtal2014.p
 Rainy datasets
 * [DID-MDN](https://github.com/hezhangsprinter/DID-MDN) [[Density-aware Single Image De-raining using a Multi-stream Dense Network
 ](https://arxiv.org/abs/1802.07412)]
-#### Train
+### Train
 1. Modify data path in data_utils.py
 2. Train model
  ```shell
  python main.py --net='mstn' --crop --crop_size=240 --bs=16 --lr=0.0001 --trainset='its_train' --testset='its_test' --steps=50000000 --eval_step=5000
  ```
 
-#### Test
+### Test
 
 The pre-trained model are available at google drive: https://drive.google.com/drive/folders/1U7zq8AyZFivzMg_yuaPCbIa5rF0wshdE?usp=sharing
 
