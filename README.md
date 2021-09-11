@@ -30,8 +30,8 @@ Rainy datasets
 
 #### Test
 
-Trained_models are available at google drive: https://drive.google.com/drive/folders/1U7zq8AyZFivzMg_yuaPCbIa5rF0wshdE?usp=sharing
+The pre-trained model are available at google drive: https://drive.google.com/drive/folders/1U7zq8AyZFivzMg_yuaPCbIa5rF0wshdE?usp=sharing
 
  ```shell
- python runtest.py --test_imgs=datapath --ck='Trained_models' --dir='savepath'
+ python runtest.py --test_imgs=datapath --ck='pre-trained model path' --dir='savepath'
 ```
