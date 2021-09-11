@@ -24,34 +24,14 @@ Rainy datasets
 ](https://arxiv.org/abs/1802.07412)]
 #### Train
 
-*Remove annotation from [main.py](net/main.py) if you want to use `tensorboard` or view `intermediate predictions`*
-
-*If you have more computing resources, expanding `bs`, `crop_size`, `gps`, `blocks` will lead to better results*
-
-train network on `ITS` dataset
-
  ```shell
- python main.py --net='ffa' --crop --crop_size=240 --blocks=19 --gps=3 --bs=2 --lr=0.0001 --trainset='its_train' --testset='its_test' --steps=500000 --eval_step=5000
+ python main.py --net='mstn' --crop --crop_size=240 --bs=16 --lr=0.0001 --trainset='its_train' --testset='its_test' --steps=50000000 --eval_step=5000
  ```
-
-
-train network on `OTS` dataset
-
-
- ```shell
- python main.py --net='ffa' --crop --crop_size=240 --blocks=19 --gps=3 --bs=2 --lr=0.0001 --trainset='ots_train' --testset='ots_test' --steps=1000000 --eval_step=5000
- ```
-
 
 #### Test
 
-Trained_models are available at baidudrive: https://pan.baidu.com/s/1-pgSXN6-NXLzmTp21L_qIg with code: `4gat`
-
-or google drive: https://drive.google.com/drive/folders/19_lSUPrpLDZl9AyewhHBsHidZEpTMIV5?usp=sharing
-*Put  models in the `net/trained_models/`folder.*
-
-*Put your images in `net/test_imgs/`*
+Trained_models are available at baidudrive: https://drive.google.com/drive/folders/1U7zq8AyZFivzMg_yuaPCbIa5rF0wshdE?usp=sharing
 
  ```shell
- python test.py --task='its or ots' --test_imgs='test_imgs'
+ python runtest.py --test_imgs=datapath --ck='pre_models' --dir='savepath'
 ```
