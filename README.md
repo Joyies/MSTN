@@ -1,5 +1,6 @@
 # MSTN
 [Efficient and Accurate Multi-scale Topological Network for Single Image Dehazing](https://ieeexplore.ieee.org/document/9473023)
+Qiaosi Yi; Juncheng Li; Faming Fang; Aiwen Jiang; Guixu Zhang
 
 ### Requirements
 
